@@ -14,12 +14,29 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
-</head>
 
+    <style>
+        video {
+            margin:0 auto;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            background-size: cover;
+            transition: 1s opacity;
+        }
+    </style>
+</head>
+    
 <body>
 
     <!-- Start your project here-->
 
+    <video autoplay loop muted poster="screenshot.jpg" id="background">
+        <source src="https://bufiles.blob.core.windows.net/co3615/video/explore.webm">
+    </video>
+    
     <div style="height: 100vh; background-image:src="https://bufiles.blob.core.windows.net/co3615/video/explore.webm">
         <div class="flex-center flex-column">
             <h1 class="animated fadeIn mb-4">I Have No Mouth and I Must Scream</h1>
